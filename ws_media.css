@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 1
+
+   Rhetoric in the United States Styles for Media
+   Author: Dajah Medina
+   Date:   1.29.19
+
+   Filename: ws_media.css
+
+*/
+
+/* VideoPlayer Styles */
+/* By targeting the video element I am able to give it a width, display, and setting all the sides of the margin. */
+video {
+    display: block;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* I added in a media query for screens with the min-width and a video within the query that sets the width, float, and margin */
+@media only screen and (min-width:521px) {
+    video {
+        width: 360px;
+        float: right;
+        margin: 10px;
+    }
+}
+
+/* Track Styles */
+/* Lastly, I added a psudeo class for cue for the caption and gave it a text size, color, and backgroundcolor. */
+::cue {
+    text: 1.3em;
+    color: rgb(221, 128, 160);
+    background: rgba(255, 255, 255, 0.8);
+}
